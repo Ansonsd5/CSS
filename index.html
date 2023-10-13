@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="On the way to master css">
+    <title>Learn Css with Anson</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js" defer></script>
+    <style>
+
+     :root{
+        font-family: 'Lora', serif;
+        font-family: 'Montserrat', sans-serif;
+        font-family: 'Nosifer', sans-serif;
+     }
+        body{
+          
+            margin: 0;
+            padding: 0px 16px;
+            font-size: 16px;
+            text-align: center;
+            color: #ffffff;
+            background: #000000;
+            
+          
+        }
+        header{
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          border-bottom: 2px solid greenyellow;
+
+        }
+        nav{
+            display: flex;
+        }
+        ul{
+            
+            display: inline-flex;
+            gap: 16px;
+
+        }
+        li,a{
+            all: unset;
+        }
+
+        main{
+           display: grid;
+           grid-template-columns: repeat(8,1fr);
+           gap: 10px;
+           margin-top: 20px;
+    
+        }
+        section{
+            display: flex;
+            flex-direction: column;
+            border: 1px solid rgba(250, 197, 208,0.2);
+            
+            
+        }
+
+        .section1{
+                grid-row: 1;
+                grid-column: 1/9;
+                padding: 1rem;
+
+        }
+        .section2{
+           grid-row:2;
+           grid-column: 1/9;
+           padding: 1rem;
+        }
+        .section3{
+            grid-row: 3;
+            grid-column:1/9;
+            padding: 1rem;
+        }
+
+        .section3>.services-list{
+            display: flex;
+            justify-content: space-around;
+        }
+
+        aside{
+            display: flex;
+            flex-direction: column;
+        }
+        aside>ul{
+            display: flex;
+            justify-content:space-around;
+            
+
+        }
+        footer{
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: 0px 16px;
+            border-top: 2px solid yellowgreen;
+            display: flex;
+            flex-direction:column-reverse;
+           
+
+        }
+
+        footer>ul{
+            display: flex;
+            justify-content: center;
+            padding-bottom: 0px !important;
+
+        }
+        footer>ul>li>{
+            all: unset;
+            
+        }
+        footer>ul>li>a{
+            display: flex;
+            align-items: center;
+        }
+        footer>ul>li>a>img{
+            width: 24px;
+            height: 24px;
+        }
+        footer>p{
+            margin-top: 0px !important;
+        }
+     
+
+    </style>
+</head>
+<body>
+    <header>
+      <h2>Learn Css</h2>
+        <nav>
+            <ul>
+                
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+    
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section1">
+            <h1>Welcome to Our Website</h1>
+            <p>We offer high-quality services to meet your needs.</p>
+        </section>
+
+        <section class="section2">
+            <h2>About Us</h2>
+            <p>We are a dedicated team with years of experience.</p>
+        </section>
+
+        <section class="section3">
+            <h2>Our Services</h2>
+            <ul class="services-list">
+                <li>
+                    <h3>Service 1</h3>
+                    <p>Details about Service 1.</p>
+                </li>
+                <li>
+                    <h3>Service 2</h3>
+                    <p>Details about Service 2.</p>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <aside>
+        <h2>Recent News</h2>
+        <ul>
+            <li><a href="#">News 1</a></li>
+            <li><a href="#">News 2</a></li>
+        </ul>
+    </aside>
+
+    <footer>
+        <p>&copy; 2023 you will find more links here</p>
+        <ul class="social-links">
+            <li><a href="https://www.linkedin.com/in/ansonsd/" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/?size=48&id=13930&format=png" alt="LinkedIn"><span>ansonsd5</span></a></li>
+            <li><a href="https://github.com/Ansonsd5" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/?size=64&id=52539&format=png" alt="GitHub">Ansonsd5</a></li>
+            <li><a href="https://www.instagram.com/anson___dsouza" target="_blank" rel="noopener noreferrer"><img src="https://cdn-icons-png.flaticon.com/128/174/174855.png" alt="Instagram">anson___dsouza</a></li>
+            <li><a href="https://twitter.com/Anson__Dsouza" target="_blank" rel="noopener noreferrer"><img src="https://cdn-icons-png.flaticon.com/128/733/733579.png" alt="twitter">Anson__Dsouza</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
